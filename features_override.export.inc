@@ -530,7 +530,7 @@ function features_override_features_export_render_addition($alter, $element, $co
     else {
       $original_export = '';
     }
-    $code[] = "    " . $component_start . $code_line . ' = ' . $value_export . ';' . $original_export;
+    $code[] = "    " . $component_start . $code_line . ' = ' . features_override_var_export($value_export) . ';' . $original_export;
     return $code;
   }
 }
